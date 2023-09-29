@@ -1,0 +1,18 @@
+.array-element {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: lightblue;
+    margin: 5px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid transparent;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.pivot {
+    border: 1px solid red;
+}

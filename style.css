@@ -2,39 +2,44 @@
     display: inline-block;
     width: 58px; /* Aumente o tamanho dos quadrados */
     height: 55px; /* Aumente o tamanho dos quadrados */
-    background-color: #0393f3; /* Altere a cor de fundo dos quadrados */
-    margin: 8px;
+    background-color: #206999; /* Altere a cor de fundo dos quadrados */
+    margin: 2px;
     text-align: center;
-    line-height: 55px; /* Atualize a linha para corresponder à altura dos quadrados */
+    line-height: 40px;
     border: 1px solid transparent;
     color: #ffffff; /* Altere a cor do texto */
+    
 }
 
 .highlight {
-    background-color: rgb(214, 214, 32);
+    background-color: rgb(214, 32, 62);
 }
 
 .pivot {
-    border: 1px solid red;
+    border: 1px solid black;
+    border-width: 3px;
 }
 
 #array-container {
     text-align: center; /* Centralize os elementos no container */
     position: relative;
-    top: 20px; /* Ajuste a posição vertical */
+    top: 200px;
+    left: 20px;
 }
 
-#array-container input,
-#array-container button {
-    margin: 8px; /* Adicione margem para espaçamento */
-    width: 120px; /* Aumente o tamanho do botão */
-    height: 40px; /* Aumente o tamanho do botão */
-    font-size: 16px; /* Aumente o tamanho da fonte do botão */
-    background-color: #3498db; /* Altere a cor de fundo do botão */
-    color: #fff; /* Altere a cor do texto do botão para branco */
-    border: none; /* Remova a borda do botão */
+.Input-button{
+    text-align: center; /* Centralize os elementos no container */
+    position: relative;
+    top: 130px;
+    left: 20px;
 }
 
-#array-container button:hover {
-    background-color: #257ab0; /* Cor de fundo ao passar o mouse */
+.button{
+    background-color: #206999;
+    color: #ffffff;
+    padding: 8px;
+}
+
+input{
+    padding: 8px;
 }

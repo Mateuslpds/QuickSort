@@ -1,18 +1,40 @@
 .array-element {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: lightblue;
-    margin: 5px;
+    width: 58px; /* Aumente o tamanho dos quadrados */
+    height: 55px; /* Aumente o tamanho dos quadrados */
+    background-color: #0393f3; /* Altere a cor de fundo dos quadrados */
+    margin: 8px;
     text-align: center;
-    line-height: 30px;
+    line-height: 55px; /* Atualize a linha para corresponder à altura dos quadrados */
     border: 1px solid transparent;
+    color: #ffffff; /* Altere a cor do texto */
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: rgb(214, 214, 32);
 }
 
 .pivot {
     border: 1px solid red;
+}
+
+#array-container {
+    text-align: center; /* Centralize os elementos no container */
+    position: relative;
+    top: 20px; /* Ajuste a posição vertical */
+}
+
+#array-container input,
+#array-container button {
+    margin: 8px; /* Adicione margem para espaçamento */
+    width: 120px; /* Aumente o tamanho do botão */
+    height: 40px; /* Aumente o tamanho do botão */
+    font-size: 16px; /* Aumente o tamanho da fonte do botão */
+    background-color: #3498db; /* Altere a cor de fundo do botão */
+    color: #fff; /* Altere a cor do texto do botão para branco */
+    border: none; /* Remova a borda do botão */
+}
+
+#array-container button:hover {
+    background-color: #257ab0; /* Cor de fundo ao passar o mouse */
 }

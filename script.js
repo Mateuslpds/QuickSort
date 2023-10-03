@@ -4,7 +4,7 @@ let leftPointer;
 let rightPointer;
 
 function createArrayElements(arr, left, right, pivot) {
-    container.innerHTML = ''; // Limpar o conteúdo atual do contêiner
+    container.innerHTML = '';
 
     for (let i = 0; i < arr.length; i++) {
         let element = document.createElement('div');
@@ -37,7 +37,7 @@ function swap(arraySwap, leftSwap, rightSwap) {
 }
 
 function quickSortStart(array) {
-    createArrayElements(array, -1, -1, -1); // Inicialmente, crie a representação gráfica do array
+    createArrayElements(array, -1, -1, -1);
     quickSort(array, 0, array.length - 1);
 }
 
@@ -48,22 +48,21 @@ async function quickSort(array, start_pos, end_pos) {
 
     while (left <= right) {
         while (array[left] < pivot) {
+            createArrayElements(array, left, right, start_pos);
+            await new Promise((resolve) => setTimeout(resolve, 3000));
             left++;
-            createArrayElements(array, left, right, start_pos); // Atualize a representação gráfica
-            await new Promise((resolve) => setTimeout(resolve, 1000));
         }
         while (array[right] > pivot) {
+            createArrayElements(array, left, right, start_pos);
+            await new Promise((resolve) => setTimeout(resolve, 3000));
             right--;
-            createArrayElements(array, left, right, start_pos); // Atualize a representação gráfica
-            await new Promise((resolve) => setTimeout(resolve, 1000));
         }
 
         if (left <= right) {
             swap(array, left, right);
-            createArrayElements(array, left, right, start_pos); // Atualize a representação gráfica após a troca
+            createArrayElements(array, left, right, start_pos);
 
-            // Aguarde um curto período de tempo para visualização
-            await new Promise((resolve) => setTimeout(resolve, 1000));
+            await new Promise((resolve) => setTimeout(resolve, 3000));
 
             left++;
             right--;

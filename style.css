@@ -1,13 +1,13 @@
 .array-element {
     display: inline-block;
-    width: 58px; /* Aumente o tamanho dos quadrados */
-    height: 55px; /* Aumente o tamanho dos quadrados */
-    background-color: #206999; /* Altere a cor de fundo dos quadrados */
+    width: 58px;
+    height: 55px;
+    background-color: #206999;
     margin: 2px;
     text-align: center;
     line-height: 40px;
     border: 1px solid transparent;
-    color: #ffffff; /* Altere a cor do texto */
+    color: #ffffff;
     
 }
 
@@ -21,14 +21,14 @@
 }
 
 #array-container {
-    text-align: center; /* Centralize os elementos no container */
+    text-align: center;
     position: relative;
     top: 200px;
     left: 20px;
 }
 
 .Input-button{
-    text-align: center; /* Centralize os elementos no container */
+    text-align: center;
     position: relative;
     top: 130px;
     left: 20px;

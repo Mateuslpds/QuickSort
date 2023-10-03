@@ -1,4 +1,7 @@
-let arr = [3,8,7,10,0,23,2,1,77,7]
+let arr = [4,5,1,3,10]
+
+console.log("Antes: " + arr)
+console.log("")
 
 function swap(arraySwap, leftSwap, rightSwap){
     var temp = arraySwap[leftSwap];
@@ -32,3 +35,6 @@ function quickSort(array, start_pos, end_pos){
 }
 
 quickSortStart(arr)
+
+console.log("")
+console.log("Depois: " + arr)
